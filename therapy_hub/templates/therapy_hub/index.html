@@ -1,0 +1,25 @@
+{% extends "base_therapy.html" %}
+{% load static %}
+{% block title %} TechWell Solution | Therapy Hub{% endblock %}
+{% block content %}
+<section class="hero-section">
+    <video autoplay muted playsinline class="hero-section-video">
+        <source src="{% static 'videos/hero.mp4' %}" type="video/mp4">
+        your browser does not support the video tag
+    </video>
+    <div class="hero-content">
+        <h1>Welcome to TechWell Therapy Hub</h1>
+        <h3><strong>Compassionate Counseling for a Happier, Healthier You</strong></h3>
+        <p>
+            At Techwell Therapy Hub, we provide a safe and supportive space for healing, 
+            growth, and self-discovery. Together, we'll navigate your challenges and 
+            empower you to live a happier, healthier life.
+        </p>
+        <button>Book a session now</button>
+        <button>Learn more</button>
+        
+    </div>
+
+</section>
+
+{% endblock %}

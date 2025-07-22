@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TechWell Solution{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="{% static 'images/logo_therapy .png' %}" alt="TherapyHub" class="logo">
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+
+    <!--Footer start here-->
+<footer class="footer-section ">
+    <section class="container ">
+        <div class="footer-top">
+            <div class="col-6 custom-style1">
+                <!-- About Section -->
+                <h6 class="b"><strong>TECHWELL SOLUTION</strong></h6>
+                <hr />
+                <p>
+                    Empowering your mental wellness journey. We offer professional counseling services, 
+                    mental health resources, and a safe space to connect with expert therapists. 
+                    Your well-being is our priority.
+                </p>
+            </div>
+            <div class="col-1">
+                <br>
+            </div>
+            <!-- Navigation Links Section -->
+            <div class="col-2 custom-style1">
+                <h6 class="b"><strong>LINKS</strong></h6>
+                <hr />
+                <p><a class="nav-link" href="">About</a></p>
+                <p><a class="nav-link" href="#">services</a></p>
+                <p><a class="nav-link" href="#">Contact</a></p>
+                <p><a class="nav-link" href="">Login</a></p>
+            </div>
+            <div class="col-3 custom-style1">
+                <h6 class="b"><strong>CONTACT</strong></h6>
+                <hr />
+                <p class="paragraph"><i class="fas fa-home me-2"></i>Nairobi, Kenya</p>
+                <p class="paragraph"><i class="fas fa-envelope me-2"></i>info@techwellsolution.com</p>
+                <p class="paragraph"><i class="fas fa-envelope me-2"></i>erastusmatekwa@gmail.com</p>
+                <p class="paragraph"><i class="fas fa-phone me-2"></i>+254-711 897 242</p>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            </div>
+        </div>
+    </section>
+        <!-- Bottom Footer -->
+        <section class="container mt-3">
+            <div class="footer-bottom">
+              <!-- Footer Links Section -->
+                <div class="links">
+                     <a href="/contact-us" class="text-white text-decoration-none mx-3">Book a Session</a>
+                    <a href="/contact-us" class="text-white text-decoration-none mx-3">Contact us</a>
+                    <a href="/privacy-policy" class="text-white text-decoration-none mx-3">Privacy Policy</a>
+                    <a href="/terms-and-conditions" class="text-white text-decoration-none mx-3">Terms & Conditions</a>
+                   
+                </div>
+                <!-- Developer Credit Section -->
+                  <p>
+                    Designed & Developed by
+                   <a href="https://www.scitt.tech.it" target="_blank"><strong>TechWell Solution</strong></a>
+                 </p>
+                 <!-- Copyright Section -->
+                <p>
+                  <span>&copy; 2005 Techwell Therapy Hub. All rights reserved.</span>
+                </p>
+                
+            </div>
+            </section>
+            <div class="container mt-3">
+            </div>
+</footer>
+</body>
+
+</html>
