@@ -15,16 +15,20 @@
 </head>
 <body>
     <header>
-    <nav>
-        <img src="{% static 'images/logo.png' %}" alt="TechWell Solution" class="logo">
-        <ul>
-            <li><a href="{% url 'index' %}">Therapy Hub</a></li>
-            <li><a href="">ProDev</a></li>
-            <li><a href="">Digital Space</a></li>
-            <li><a href="">Login</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav class="menu">
+            <img src="{% static 'images/logo.png' %}" alt="TechWell Solution" class="logo">
+
+            <button class="menu-toggle">&#9776;</button> 
+                     
+            <ul>
+                <li><a href="{% url 'index' %}">Therapy Hub</a></li>
+                <li><a href="">ProDev</a></li>
+                <li><a href="">Digital Space</a></li>
+                <li><a href="">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
 <section class="bg">
     <video autoplay muted loop playsinline class="bg-video">
     <source src="{% static 'videos/videobg.mp4' %}" type="video/mp4">
@@ -56,10 +60,16 @@
                         <h6 class="b"><strong>TECHWELL SOLUTION</strong></h6>
                         <hr />
                         <p>
-                            Empowering your mental wellness journey. We offer professional counseling services, 
-                            mental health resources, and a safe space to connect with expert therapists. 
-                            Your well-being is our priority.
+                           TechWell Solution is a trusted provider of professional counselling services and innovative software solutions. We empower individuals through mental wellness support and help businesses thrive with cutting-edge digital technologies — all under one roof.
                         </p>
+                        <br>
+                         <div class="footer-social">
+                         
+                          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://x.com" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+                          <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
                     </div>
                     <div class="col-1">
                       <br>
@@ -68,6 +78,7 @@
                     </div>
                             <!-- Navigation Links Section -->
                     <div class="col-2 custom-style1">
+                        
                         <h6 class="b"><strong>LINKS</strong></h6>
                         <hr />
                         <p><a class="nav-link" href="">About</a></p>
@@ -82,14 +93,10 @@
                         <hr />
                         <p class="paragraph"><i class="fas fa-home me-2"></i>Nairobi, Kenya</p>
                         <p class="paragraph"><i class="fas fa-envelope me-2"></i>info@techwellsolution.com</p>
-                        <p class="paragraph"><i class="fas fa-phone me-2"></i>+254-711 897 242</p>
-                        <div class="footer-social">
-                         
-                          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                          <a href="https://x.com" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
-                          <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                      </div>
+                        <p class="paragraph"><i class="fas fa-phone me-2"></i>+254711897242</p>
+                        <p class="paragraph"><i class="fas fa-phone me-2"></i>+254792501015</p>
+
+                       
                     </div>
                   
                 </div>
@@ -98,7 +105,7 @@
 
 
         <!-- Bottom Footer -->
-        <section class="container mt-3">
+        <section class="container">
             <div class="footer-bottom">
               <!-- Footer Links Section -->
                 <div class="links">
@@ -125,6 +132,14 @@
             </div>
 </footer>
 
-    
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
+
 </body>
 </html>
