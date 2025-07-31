@@ -1,4 +1,149 @@
-{% extends 'base.httml' %}
+{% extends 'base_therapy.html' %}
 {% load static %}
-{% block title %}Therapy Hub |Services{% endblock %}
-{% block content %}{% endblock%}
+{% block title %}Therapy Hub | Services{% endblock %}
+
+{% block content %}
+<header><h1>Explore our services</h1></header>
+
+<section class="container-hero">
+  <h2>Support for Every Step</h2>
+  <p>We're here to guide you through life’s challenges with professional counseling services tailored to your needs.</p>
+  <a href="" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+</section>
+
+<section class="container-services">
+  
+  <!--<h2>Available Sessions</h2>-->
+  <div class="service-box">
+    <h3>One-on-One Counseling</h3>
+    <p>Personalized, private sessions that focus entirely on you and your journey.</p>
+    <ul>
+      <li>Confidential, individual support</li>
+      <li>Explore emotions, trauma, or mental health</li>
+      <li>Develop coping tools and self-awareness</li>
+      <li>Weekly or bi-weekly 50-minute sessions</li>
+    </ul>
+  </div>
+  <div class="service-box">
+    <h3>Group Therapy & Workshops</h3>
+    <p>Share experiences and build resilience through community-based healing.</p>
+    <ul>
+      <li>Facilitated by licensed therapists</li>
+      <li>Connect with others facing similar challenges</li>
+      <li>Focus topics: grief, anxiety, self-esteem, more</li>
+      <li>Interactive skill-building workshops available</li>
+    </ul>
+  </div>
+
+  <div class="service-box">
+    <h3>Virtual Sessions</h3>
+    <p>Convenient, secure online counseling from the comfort of your home.</p>
+    <ul>
+      <li>Available via Zoom or secure platform</li>
+      <li>Flexible scheduling — evenings/weekends</li>
+      <li>Same quality as in-person sessions</li>
+      <li>Ideal for remote clients or busy lifestyles</li>
+    </ul>
+  </div>
+  </div>
+</section>
+<section class="container-sessions">
+    <div class="service-card">
+      <h3>Individual Counseling</h3>
+      <p>Personalized sessions to help you deal with anxiety, depression, and personal growth.</p>
+      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+    </div>
+    <div class="service-card">
+      <h3>Couples Therapy</h3>
+      <p>Rebuild trust and improve communication in your relationship with expert guidance.</p>
+      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+    </div>
+    <div class="service-card">
+      <h3>Family Counseling</h3>
+      <p>Work through family issues together in a safe and supportive environment.</p>
+      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+    </div>
+   </section>
+ 
+
+  <section class="container-about">
+    <div class="about-card">
+       <h2>Why Choose Us?</h2>
+      <p>Our certified counselors use evidence-based techniques to ensure effective, compassionate care in a confidential setting.</p>
+    </div>
+    
+    <div class="about-card">
+       <h2>Ready to Begin Your Journey?</h2>
+      <p>Reach out to schedule your first session today.</p>
+      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+    </div>
+   
+  </section>
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Book a Counseling Session</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="session-type">Session Type</label>
+          <select id="session-type" name="session-type" required>
+            <option value="">Select a session</option>
+            <option value="One-on-onee Counseling">One-on-one Counseling</option>
+            <option value="Group Therapy">Group Therapy</option>
+            <option value="Virtual Session">Virtual Session</option>
+          </select>
+          <div class="form-group">
+            <label for="session-type">Counselling Type</label>
+            <select id="session-type" name="session-type" required>
+              <option value="">Select counselling type</option>
+              <option value="One-on-onee Counseling">Individual Counseling</option>
+              <option value="Group Therapy">Couples Therapy</option>
+              <option value="Virtual Session">Family Counseling</option>
+            </select>
+          
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Brief Message</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+<script>
+    const modal = document.getElementById("bookingModal");
+    const closeBtn = document.getElementById("closeModal");
+    const openBtns = document.querySelectorAll(".openModalBtn");
+    const sessionSelect = document.getElementById("session-type");
+  
+    openBtns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const sessionType = btn.getAttribute("data-session");
+        sessionSelect.value = sessionType; // auto-fill select dropdown
+        modal.style.display = "block";
+      });
+    });
+  
+    closeBtn.onclick = () => modal.style.display = "none";
+  
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+{% endblock %}
