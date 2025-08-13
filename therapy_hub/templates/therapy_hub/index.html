@@ -2,12 +2,8 @@
 {% load static %}
 {% block title %} TechWell Solution | Therapy Hub{% endblock %}
 {% block content %}
-<section class="hero-section">
-    <video autoplay muted playsinline class="hero-section-video">
-        <source src="{% static 'videos/hero.mp4' %}" type="video/mp4">
-        your browser does not support the video tag
-    </video>
-    <div class="hero-content">
+<section class="hero-container">
+    <div class="hero-card">
         <h1>Welcome to TechWell Therapy Hub</h1>
         <h3><strong>Compassionate Counseling for a Happier, Healthier You</strong></h3>
         <p>
@@ -15,27 +11,39 @@
             growth, and self-discovery. Together, we'll navigate your challenges and 
             empower you to live a happier, healthier life.
         </p>
-        <button>Book a session now</button>
-        <button>Learn more</button>
-        
+        <a href=""><button>Book a session now</button></a>
+        <a href=""><button>Learn more</button></a>
+    </div>
+    <div class="slider">
+        <img src="{% static 'images/Erastus.png' %}" alt="Image 1" class="slide">
+        <img src="{% static 'images/photo2.png' %}" alt="Image 2" class="slide">
+        <img src="{% static 'images/photo11.png' %}" alt="Image 3" class="slide">
     </div>
 </section>
 <div class="container-one">
-        <div class="card-one" >
-            <h3>Your Partner in Growth and Healing</h3>
-            <p>Hey there! I’m Erastus Ivelia Matekwa, and I’m so glad you’re here. Life can be overwhelming at
-                times, and you don’t have to go through it alone. <br>
-                Whether you’re dealing with stress, anxiety, 
-                relationship struggles, or just feeling stuck, I’m here to help you navigate it all with compassion 
-                and understanding.</p>
-        </div>   
+    <div class="profile1-wrapper">
+        <img src="{% static 'images/Erastus.png' %}" alt="Photo" class="profile1-photo">
+    </div>
+     
+    <div class="card-1" >
+        <h3>Your Partner in Growth and Healing</h3>
+        <p>Hey there! I’m Erastus Ivelia Matekwa, and I’m so glad you’re here. Life can be overwhelming at
+            times, and you don’t have to go through it alone.</p>
+        <p>Whether you’re dealing with stress, anxiety, 
+            relationship struggles, or just feeling stuck, I’m here to help you navigate it all with compassion 
+            and understanding.</p>
+    </div>
+   
+</div>
+<hr>
+<div class="container-one">
         <div class="card-one" >
              <h3>How I Can Help:</h3>
             <p>Everyone’s journey is different, and I’m here to support you with personalized counseling that fits your
-                 needs. <br>
-                 Whether you're looking for a space to talk, tools to manage anxiety, or guidance through life’s 
+                 needs. </p>
+            <p>Whether you're looking for a space to talk, tools to manage anxiety, or guidance through life’s 
                 challenges, I’m here to help.</p>
-                <button class="btn" type="submit">Learn more</button>
+         <a href="{% url 'services' %}"><button>Book a session now</button></a>      
         </div> 
         <div class="card-one">
             <h3>My Services</h3>
@@ -46,7 +54,7 @@
              <p>Grief & Life Transitions Support</p>
         </div>      
     </div>
-    
 </div>
+ 
 
 {% endblock %}

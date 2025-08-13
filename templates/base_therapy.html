@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="{% url 'about' %}" class=" {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About us</a></li>
                 <li><a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Services</a></li>
-                <li><a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact us</a></li>
+                <li><a href="{% url 'contact:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact us</a></li>
                 <li><a href="">Login</a></li>
             </ul>
         </nav>
@@ -34,8 +34,8 @@
         <div class="footer-top">
             <div class="col-4 custom-style1">
                 <!-- About Section -->
-                <h6 class="b"><strong>TECHWELL SOLUTION</strong></h6>
-                <h6 class="b"><strong>Navigate our services</strong></h6>
+                
+                <h6 class="b"><strong>NAVIGATE OUR SERVICES</strong></h6>
                 <hr />
                 <p><a href="">TechWell Therapy Hub</a></p>
                 <p><a href="">TechWell ProDev</a></p>

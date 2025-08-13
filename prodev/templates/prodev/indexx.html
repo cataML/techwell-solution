@@ -1,0 +1,314 @@
+{% extends "base_prodev.html" %}
+{% load static %}
+{% block title %}Prodev | Home{% endblock %}
+{%  block content %}
+<section class="container-prodev section-anchor" id="Indexx">
+    <div class="prodev-card">
+        <h1 class="fade-slide">Hi, am Catherine Mung'ohe</h1>
+        <h5 class="fade-slide delay">Software Developer & Tech Problem Solver</h5>
+        <button><a href=""></a>View my work</button>
+        <button><a href=""></a>Request a quote</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dev-tools">
+            <img src="{% static 'images/html5.svg' %}" alt="">
+            <img src="{% static 'images/css.svg' %}" alt="">
+            <img src="{% static 'images/JavaScript.svg' %}" alt="">
+            <img src="{% static 'images/python.svg' %}" alt="">
+            <img src="{% static 'images/django.svg' %}" alt="">
+            <img src="{% static 'images/git.svg' %}" alt="">
+            <img src="{% static 'images/github.svg' %}" alt="">
+        </div>
+   </div>
+   <div class="profile-wrapper">
+    <img src="{% static 'images/cate.jpg' %}" alt="" class="profile-photo"> 
+   </div>
+       
+</section>
+<section class="section-vision"><h2 id="about" class="heading section-anchor">About</h2>
+   <div class="vision-wrapper">
+  <div class="vision-cards">
+    <div class="vision-card">
+      <h4><i class="fas fa-eye"></i> Our Vision</h4>
+      <hr>
+      <p>
+        To build innovative, scalable, and user-centric digital solutions that 
+        empower individuals and businesses to thrive in a connected world.
+      </p>
+    </div>
+
+    <div class="vision-card">
+      <h4><i class="fas fa-rocket"></i> Our Mission</h4>
+      <hr>
+      <p>At TechWell ProDev Studio, our mission is to craft clean, scalable, 
+        and user-centered software that drives innovation and solves real-world problems.
+      </p>
+      <p>We are committed to delivering reliable solutions that help businesses grow, 
+        automate tasks, and provide seamless digital experiences.</p>
+      <p>We believe in continuous learning, transparent communication, and building with 
+        purpose — empowering clients to thrive in the ever-evolving tech landscape.
+      </p>
+    </div>
+  </div>
+</div>
+ <div class="container-prodev1">
+<div class="profile-container">
+    <img src="{% static 'images/Catherine.png' %}" alt="Profile" class="about-photo">
+
+    <div class="rotating-circle">
+        <span class="center-number">4</span>
+        <svg viewBox="0 0 200 200" class="rotating-text">
+            <path id="circlePath" 
+                  d="M 100, 100
+                     m -75, 0
+                     a 75,75 0 1,1 150,0
+                     a 75,75 0 1,1 -150,0" 
+                  fill="none" />
+            <text font-size="16" fill="black" font-weight="bold">
+                <textPath xlink:href="#circlePath" startOffset="0%">
+                    YEARS OF BEST AND SUCCESSFUL WORKING EXPERIENCE
+                </textPath>
+            </text>
+        </svg>
+    </div>
+  </div>
+
+<div class="Prodev1-card">
+            <h2>About me</h2>
+            <p>I'm a passionate Full-Stack Developer skilled in building responsive, secure, 
+                and scalable web applications. My work combines clean code with intuitive design, 
+                enabling businesses and individuals to thrive online.
+            </p>
+       
+        <div>
+            <ul><h5>💻 Tech Stack & Tools</h5>
+                <li><strong>Backend:</strong> Django, Python, RESTful APIs</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Tailwind CSS</li>
+                <li><strong>Database:</strong> PostgreSQL, MySQL</li>
+                <li><strong>Version Control: </strong>Git & GitHub</li>
+                <li><strong>Payment Integration:</strong> Stripe, M-Pesa</li>
+                <li><strong>Deployment:</strong> AWS EC2, S3, PythonAnywhere, Render</li>
+                <li><strong>Cloud Knowledge:</strong>
+                    <ul>
+                        <li>AWS EC2, S3, RDS, Route 53, IAM</li>
+                        <li>Familiar with deploying Django apps on AWS</li>
+                        <li>Basic knowledge of containerization using Docker</li>
+                    </ul>
+                </li>
+                <li><strong>Workflow:</strong> VS Code, GitHub Projects, Postman, Linux Terminal</li>
+
+            </ul>
+        </div>
+    </div>
+  </div>
+    <button><a href=""></a>Request a quote</button>
+</section>
+<section class="section-portfolio"><h2 id="portfolio" class="heading section-anchor">Portfolio</h2>
+  <h3>Each project is a unique piece of development</h3>
+    <div class="container-portfolio">
+        <div class="portfolio-card"> 
+          <img src="{% static 'images/Clinic.png' %}" alt="Memorila">
+          <h4>Clinic Landing page</h4>
+          <p>A landing page for a private clininic called 'Memorial Clinic.'</p>
+          <p><strong>Tech Stach:</strong>HTML, CSS, Javascript</p>
+          <a href="https://github.com/cataML/Memorial-Clinic.git" target="_blank">View project</a>
+        </div>
+        <div class="portfolio-card">
+          <img src="{% static 'images/Survay.png' %}" alt="">
+          <h4>Survey Form</h4>
+          <p>Survey form for Blessed Graphics Ltd</p>
+          <p><strong>Tech Stach:</strong>HTML, CSS, PHP</p>
+          <a href="https://github.com/cataML/Survey-Form.git" target="_blank">View project</a>
+        </div>
+        <div class="portfolio-card">
+          <img src="{% static 'images/FreshFarm.png' %}" alt="Memorila">
+          <h4>Farm to table marketplace</h4>
+          <p>A website that connects farmers to the consumers.</p>
+          <p><strong>Tech Stach:</strong>HTML, CSS, Javascript, Python, Django</p>
+          <a href="https://github.com/cataML/farm-2-table.git" target="_blank">View project</a>
+        </div>
+    </div>
+  </section>
+  <section class="blog-section"><h2 id="blog" class="heading section-anchor">Blog</h2>
+  <div class="blog-container">
+  <div class="blog-card">
+    <h5>Getting Started with HTML</h5>
+    <p>Learn the building blocks of the web with HTML basics.</p>
+  </div>
+  <div class="blog-card">
+    <h5>CSS Tips for Beginners</h5>
+    <p>Discover how to style your websites beautifully with CSS.</p>
+  </div>
+  <div class="blog-card">
+    <h5>JavaScript Made Simple</h5>
+    <p>Understand how JavaScript brings your pages to life.</p>
+  </div>
+  <div class="blog-card">
+    <h5>Responsive Web Design</h5>
+    <p>Make your websites look great on all devices.</p>
+  </div>
+  <div class="blog-card">
+    <h5>Web Development Best Practices</h5>
+    <p>Follow industry standards to build maintainable websites.</p>
+  </div>
+</div>
+  <br>
+  <div class="faq-container">
+  <h4>Frequently Asked Questions</h4>
+
+  <details>
+    <summary>1. What services do you offer?</summary>
+    <p>We offer web development, software engineering, and counselling services tailored to client needs.</p>
+  </details>
+
+  <details>
+    <summary>2. How can I book a consultation?</summary>
+    <p>You can book a consultation through our contact form or by emailing us directly.</p>
+  </details>
+
+  <details>
+    <summary>3. Do you offer payment plans?</summary>
+    <p>Yes, we offer flexible payment options via M-Pesa, PayPal, and bank transfer.</p>
+  </details>
+
+  <details>
+    <summary>4. What technologies do you use?</summary>
+    <p>We use HTML, CSS, JavaScript, Django, React, and other modern tools to build high-quality solutions.</p>
+  </details>
+
+  <details>
+    <summary>5. Can you help with website maintenance?</summary>
+    <p>Absolutely. We offer ongoing support, updates, and security checks for your website.</p>
+  </details>
+
+  <details>
+    <summary>6. How long does a project take?</summary>
+    <p>Project timelines vary depending on complexity, but we aim to deliver within agreed deadlines.</p>
+  </details>
+
+  <details>
+    <summary>7. Is my data secure with you?</summary>
+    <p>Yes. We follow strict privacy policies and use secure systems to protect your data.</p>
+  </details>
+
+  <details>
+    <summary>8. Do you work with international clients?</summary>
+    <p>Yes, we work with clients worldwide using remote collaboration tools.</p>
+  </details>
+
+  <details>
+    <summary>9. Can I request custom features?</summary>
+    <p>Yes. We customize every project to match your exact needs and preferences.</p>
+  </details>
+
+  <details>
+    <summary>10. How do I get started?</summary>
+    <p>Simply reach out through our website or contact us directly to discuss your project.</p>
+  </details>
+  </div>
+<div class="testimonials"><h3>What Clients Say</h3>
+  <div class="testimonial-wrapper">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <p>"Catherine is an exceptional developer who delivers high-quality work on time!"</p>
+        <h4>- John Doe, Project Manager</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Her problem-solving skills are unmatched. She turned our idea into a fully functional product."</p>
+        <h4>- Sarah K., Startup Founder</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Working with Catherine was an absolute pleasure. Great communication and results."</p>
+        <h4>- Mark L., Business Owner</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"She understood our needs quickly and built exactly what we wanted."</p>
+        <h4>- Emily R., CEO</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional, creative, and always ahead of deadlines. Highly recommended!"</p>
+        <h4>- Alex P., Tech Lead</h4>
+      </div>
+      <!-- Duplicate for smooth infinite loop -->
+      <div class="testimonial-card">
+        <p>"Catherine is an exceptional developer who delivers high-quality work on time!"</p>
+        <h4>- John Doe, Project Manager</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Her problem-solving skills are unmatched. She turned our idea into a fully functional product."</p>
+        <h4>- Sarah K., Startup Founder</h4>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section><h2 id="contact" class="heading section-anchor">Contact</h2>
+  
+    <form method="POST" class="contact-form">
+      <h3>Contact Us</h3>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Message</button>
+    </form>
+
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color: green;">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+  <section class="container-contact">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <h5 class="h5"><strong>Reach us directly:</strong></h5>
+    </div>
+    <div class="col-md-4">
+        <p class="paragraph"><i class="fas fa-home me-2"></i>Nairobi, Kenya</p>
+        <p class="paragraph"><i class="fas fa-envelope me-2"></i>info@techwellsolution.com</p>
+        <p class="paragraph"><i class="fas fa-envelope me-2"></i>catelilungo@gmail.com</p>
+        <p class="paragraph"><i class="fas fa-phone me-2"></i>+254-792 501 015</p>
+    </div>
+    <div class="col-md-2"></div>
+</section>
+</section>
+<script>
+  const cards = document.querySelectorAll('.blog-card');
+  let currentIndex = 0;
+
+  function showNextCard() {
+    cards[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % cards.length;
+    cards[currentIndex].classList.add('active');
+  }
+
+  // Change every 3 seconds
+  setInterval(showNextCard, 3000);
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+});
+</script>
+{% endblock %}

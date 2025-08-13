@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.landing_page, name='landing'),
     path('therapy_hub/', include('therapy_hub.urls')),
-    path('prodev/', include('prodev.urls'))
+    path('prodev/', include('prodev.urls')),
+    path('therapy/contact/', include('contact.urls', namespace='therapy_contact')),
+    path('prodev/contact/', include('contact.urls', namespace='prodev_contact')),
 ]
