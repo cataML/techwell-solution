@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from contact.forms import ContactUsForm
 from django.contrib import messages
 
 # Create your views here.

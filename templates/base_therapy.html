@@ -4,110 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}TechWell Solution{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>{% block title %}Techwell Counselling & Therapy{% endblock %}</title>
+    <!--Links to External styling resources-->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!--Links to manin css styling resources-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="{% static 'js/script.js' %}"></script>
 </head>
 <body>
-    <header>
-        <nav class="menu" style="background: rgb(31, 31, 247);">
-            <img src="{% static 'images/logo_therapy .png' %}" alt="TherapyHub" class="logo">
-            <button class="menu-toggle">&#9776;</button>
-            <ul>
-                <li><a href="{% url 'about' %}" class=" {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About us</a></li>
-                <li><a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Services</a></li>
-                <li><a href="{% url 'contact:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact us</a></li>
-                <li><a href="">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Top Navigation Bar -->
+<div class="top-navbar" id="topNavbar">
+    <div class="top-nav-left">
+        <span>(+254) 712 365 478</span>
+        <span>info@serenitytherapy.com</span>
+    </div>
+    <div class="top-nav-right">
+        <span>Mon-Fri: 9am-7pm</span>
+        <span>Emergency: (+254) 987-457 575</span>
+    </div>
+</div>
+
+<!-- Bottom Navigation Bar -->
+<div class="bottom-navbar">
+    <!-- Mobile Menu Toggle + Left Links -->
+    <div class="nav-left">
+        <input type="checkbox" id="menu-toggle-input" style="display: none;">
+        <label for="menu-toggle-input" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Mobile/Hidden Links -->
+        <ul class="nav-links">
+            <li><a href="{% url 'index' %}" class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}">Home</a></li>
+            <li><a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a></li>
+            <li><a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Services</a></li>
+            <li><a href="#">Case Studies</a></li>
+        </ul>
+    </div>
+
+    <!-- Logo centered on mobile -->
+    <div class="nav-logo">
+        <img src="{% static 'images/logo.jpg' %}" alt="Serenity Counseling Logo">
+    </div>
+
+    <!-- Right Links + Book Button -->
+    <div class="nav-right">
+        <ul class="nav-links">
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a></li>
+        </ul>
+        <a href="{% url 'booking' %}" class="book-btn">Book Appointment</a>
+    </div>
+</div>
     {% block content %}
     {% endblock %}
-
-    <!--Footer start here-->
-<footer class="footer-section ">
-    <section class="container ">
-        <div class="footer-top">
-            <div class="col-4 custom-style1">
-                <!-- About Section -->
-                
-                <h6 class="b"><strong>NAVIGATE OUR SERVICES</strong></h6>
-                <hr />
-                <p><a href="">TechWell Therapy Hub</a></p>
-                <p><a href="">TechWell ProDev</a></p>
-                <p><a href="">Digital space</a></p>
-            </div>
-            
-         
-          
-            <!-- Navigation Links Section -->
-            <div class="col-2 custom-style1">
-                <h6 class="b"><strong>LINKS</strong></h6>
-                <hr />
-                <p><a class="nav-link" href="">About</a></p>
-                <p><a class="nav-link" href="#">services</a></p>
-                <p><a class="nav-link" href="#">Contact</a></p>
-                <p><a class="nav-link" href="">Login</a></p>
-            </div>
-            <div class="col-3 custom-style1">
-                <h6 class="b"><strong>CONTACT</strong></h6>
-                <hr />
-                <p class="paragraph"><i class="fas fa-home me-2"></i>Nairobi, Kenya</p>
-                <p class="paragraph"><i class="fas fa-envelope me-2"></i>info@techwellsolution.com</p>
-                <p class="paragraph"><i class="fas fa-envelope me-2"></i>erastusmatekwa@gmail.com</p>
-                <p class="paragraph"><i class="fas fa-phone me-2"></i>+254-711 897 242</p>
-             
-            </div>
-            
-        </div>
-          <div class="footer-social">
-                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-    </section>
-        <!-- Bottom Footer -->
-        <section class="container mt-3">
-            <div class="footer-bottom">
-              <!-- Footer Links Section -->
-                <div class="links">
-                     <a href="/contact-us" class="text-white text-decoration-none mx-3">Book a Session</a>
-                    <a href="/contact-us" class="text-white text-decoration-none mx-3">Contact us</a>
-                    <a href="/privacy-policy" class="text-white text-decoration-none mx-3">Privacy Policy</a>
-                    <a href="/terms-and-conditions" class="text-white text-decoration-none mx-3">Terms & Conditions</a>
-                   
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <!-- First Section: Logo and Description -->
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="{% static 'images/logo.jpg' %}" alt="Serenity Counseling Logo">
                 </div>
-                <!-- Developer Credit Section -->
-                  <p>
-                    Designed & Developed by
-                   <a href="https://www.scitt.tech.it" target="_blank"><strong>TechWell Solution</strong></a>
-                 </p>
-                 <!-- Copyright Section -->
-                <p>
-                  <span>&copy; 2005 Techwell Therapy Hub. All rights reserved.</span>
+                <p class="footer-description">
+                   At Techwell Therapy, we believe every mind deserves care and every story matters.
                 </p>
+            </div>
+            
+            <!-- Second Section: Services -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Mission</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Vision</a></li>
+                </ul>
+            </div>
+            
+            <!-- Third Section: Resources -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Therapy Courses</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Workshops & Events</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog & Articles</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Self-Help Resources</a></li>
+                </ul>
+            </div>
+            
+            <!-- Fourth Section: Newsletter and Social -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Stay Connected</h3>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
                 
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            </section>
-            <div class="container mt-3">
-            </div>
-</footer>
-<script>
-  const toggleBtn = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
-
-  toggleBtn.addEventListener('click', () => {
-    menu.classList.toggle('open');
-  });
-</script>
-<!-- Bootstrap 5 JS Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025  <b>Techwell Therapy</b>. Healing Minds, Empowering Futures. | All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>

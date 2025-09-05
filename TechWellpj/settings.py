@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     #Custom apps
     'therapy_hub.apps.TherapyHubConfig',
     'prodev.apps.ProdevConfig',
-    'contact.apps.ContactConfig'
+    
     
 ]
 

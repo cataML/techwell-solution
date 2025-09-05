@@ -3,17 +3,129 @@
 {% block title %}Therapy Hub | Services{% endblock %}
 
 {% block content %}
-<header><h1>Explore our services</h1></header>
 
-<section class="container-hero">
-  <h2>Support for Every Step</h2>
+<section class="about-section">
+    <div class="hero-content">
+      <h1>About Tech Well Therapy</h1>
+      <h6>Empowering minds, healing hearts, restoring balance</h6>
+      <p>At TechWell Therapy, we believe that mental health is the foundation of overall well being. Our 
+        mission is to provide compassionate, professional, and accessible therapy services that empower 
+        individuals, couples, and organizations to thrive. Guided by care and expertise, we walk with you on 
+        the journey to healing, growth, and resilience.</p>
+      <a href="#" class="book-btn">Discover Programmes</a>
+    </div>
+  </section>
+  <section class="service-section">
+        <div class="content-card">
+            <h2>Our Services</h2>
+            <h6>Blending professional counselling with impactful training in Kenya.</h6>
+            <p>At Techwell Therapy, we provide a wide range of counselling, therapy, and wellness services designed to meet
+            you where you are. Whether you’re seeking individual support, family guidance, or group therapy, our compassionate
+            professionals are here to walk with you on your journey toward healing and growth.
+            </p>
+        </div>
+         <div class="service-container">
+            <div class="services-card">
+                <img src="{% static 'images/individual.jpg' %}" alt="" class="image">
+                <h4>Individual Therapy</h4>
+                <p>Private one-on-one sessions in a safe, supportive space. Build resilience and 
+                    discover healthy coping strategies.
+                </p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/couples.jpg' %}" alt="" class="image">
+                <h4>Couples Therapy</h4>
+                <p>Guided sessions to strengthen relationships. Improve communication and resolve conflicts together.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/coperate.jpg' %}" alt="" class="image">
+                <h4>Corporate Therapy</h4>
+                <p>Workplace programs that boost employee wellbeing. Address stress, burnout, and team challenges.</p>
+            </div>
+            </div>
+        <div class="service-container">
+            <div class="services-card">
+                <img src="{% static 'images/stress.jpg' %}" alt="" class="image">
+                <h4>Stress Therapy</h4>
+                <p>Learn practical techniques to handle daily stress. Regain balance and peace of mind.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/depression.jpg' %}" alt="" class="image">
+                <h4>Depression Therapy</h4>
+                <p>Compassionate support for those facing depression. Find hope and healing through proven methods.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/anxiety.jpg' %}" alt="" class="image">
+                <h4>Anxiety Therapy</h4>
+                <p>Targeted sessions to manage worry and fear. Regain control and live with confidence.</p>
+            </div>
+        </div>
+    </section>
+    <section class="book-section">
+      <div class="book-card" style="background-color: #4D7838;">
+        <h4 style="color: white;">Why Book With Us?</h4>
+        <ul>
+          <li>Confidential & Professional Counseling</li>
+          <li>Experienced Licensed Counselors</li>
+          <li>Flexible In Person & Virtual Sessions</li>
+          <li>Affordable & Transparent Pricing</li>
+        </ul>
+      </div>
+      <div class="book-card" style="background-color: #aaf383;">
+        <h4 style="color: white;">What to Expect After Booking</h4>
+        <ul>
+          <li>You ll receive a confirmation email/SMS</li>
+          <li>A counselor will review your request</li>
+          <li>We ll contact you within 24 hours</li>
+          <li> Your journey to healing begins</li>
+        </ul>
+      </div>
+    </section>
+<!--<section class="container-hero">
+  <h2>Explore our services</h2>
+  <h4>Support for Every Step</h4>
   <p>We're here to guide you through life’s challenges with professional counseling services tailored to your needs.</p>
-  <a href="" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+  <a href="" class="cta-book openModalBtn" data-session="one-on-one Counseling"><button>Book a Session</button></a>
 </section>
 
-<section class="container-services">
-  
-  <!--<h2>Available Sessions</h2>-->
+<section class="service-section">
+  <h2>Counselling Services offered</h2>
+  <div class="container-sessions">
+    <div class="service-card">
+      <h3>Individual Counseling</h3>
+      <p>Personalized sessions to help you deal with anxiety, depression, and personal growth.</p>
+      <p>The sessions are tailored to your unique needs, helping you gain clarity, build resilience,
+        and move toward your personal goals.</p>
+    </div>
+    <div class="service-card">
+      <h3>Couples Therapy</h3>
+      <p>Couples therapy helps partners strengthen their relationship, improve communication, 
+        and resolve conflicts in a safe, supportive environment guided by a trained therapist.</p>      
+      <p>Rebuild trust and improve communication in your relationship with expert guidance.</p>
+      
+    </div>
+    <div class="service-card">
+      <h3>Family Counseling</h3>
+      <p>A trained therapist guides conversations to uncover underlying issues, promote empathy, 
+        and create healthier ways of relating to one another.</p>
+      <p>Work through family issues together in a safe and supportive environment.</p>     
+    </div>
+    <div class="service-card">
+      <h3>Trauma Counselling</h3>
+      <p>Trauma counselling helps individuals recover from distressing or life-threatening 
+        experiences.</p> 
+        <p>It provides a safe, supportive space to process emotions, reduce anxiety, and rebuild 
+          a sense of safety and control in life.</p>
+    </div>
+  </div>
+    <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling"> <button> Book a Session</button></a>
+</div>
+  </section>
+
+</div>
+<section class="session-section">
+  <h2>Mode of delivery</h2>
+  <div class="container-services" style="background-image: url"('{% static 'images/one_one.jpg' %}');">
   <div class="service-box">
     <h3>One-on-One Counseling</h3>
     <p>Personalized, private sessions that focus entirely on you and your journey.</p>
@@ -46,27 +158,8 @@
     </ul>
   </div>
   </div>
-</section>
-<section class="container-sessions">
-    <div class="service-card">
-      <h3>Individual Counseling</h3>
-      <p>Personalized sessions to help you deal with anxiety, depression, and personal growth.</p>
-      
-    </div>
-    <div class="service-card">
-      <h3>Couples Therapy</h3>
-      <p>Rebuild trust and improve communication in your relationship with expert guidance.</p>
-      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling"> <button> Book a Session</button></a>
-    </div>
-    <div class="service-card">
-      <h3>Family Counseling</h3>
-      <p>Work through family issues together in a safe and supportive environment.</p>
-      
-    </div>
-   </section>
- 
-
-  <section class="container-about">
+  </div>
+    <div class="container-about">
     <div class="about-card">
        <h2>Why Choose Us?</h2>
       <p>Our certified counselors use evidence-based techniques to ensure effective, compassionate care in a confidential setting.</p>
@@ -75,10 +168,12 @@
     <div class="about-card">
        <h2>Ready to Begin Your Journey?</h2>
       <p>Reach out to schedule your first session today.</p>
-      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling">Book a Session</a>
+      <a href="#" class="cta-book openModalBtn" data-session="one-on-one Counseling"><button>Book a Session</button></a>
     </div>
-   
-  </section>
+  </div>
+</section>
+
+<!--Booking form--
   <div id="bookingModal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeModal">&times;</span>
@@ -145,5 +240,5 @@
         modal.style.display = "none";
       }
     };
-  </script>
+  </script>-->
 {% endblock %}

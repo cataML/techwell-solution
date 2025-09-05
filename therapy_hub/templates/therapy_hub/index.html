@@ -1,60 +1,374 @@
 {% extends "base_therapy.html" %}
 {% load static %}
-{% block title %} TechWell Solution | Therapy Hub{% endblock %}
+{% block title %} TechWell Therapy |  Home{% endblock %}
 {% block content %}
-<section class="hero-container">
-    <div class="hero-card">
-        <h1>Welcome to TechWell Therapy Hub</h1>
-        <h3><strong>Compassionate Counseling for a Happier, Healthier You</strong></h3>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Journey to Mental Wellness Starts Here</h1>
+      <p>At Techwell Therapy, we believe mental health is the foundation of a fulfilling life. Whether you are seeking personal counselling, family therapy, or professional training in mental wellness, our dedicated team is here to support and empower you.</p>
+      <a href="#" class="book-btn">Our Programmes</a>
+    </div>
+  </section>
+ <!-- Content Sections -->
+  <section class="content-section">
+    
+         <img src="{% static 'images/virtual.jpeg' %}" alt="" class="img">
+         
+    <div class="content-card">
+        <h2>Who We Are</h2>
+        <h6>Blending professional counselling with impactful training in Kenya.</h6>
         <p>
-            At Techwell Therapy Hub, we provide a safe and supportive space for healing, 
-            growth, and self-discovery. Together, we'll navigate your challenges and 
-            empower you to live a happier, healthier life.
+            At Techwell Therapy, we believe mental health is the cornerstone of 
+            a fulfilling life. Our mission is to provide accessible, professional 
+            counselling and therapy services while equipping future mental 
+            health practitioners through certified courses and training
         </p>
-        <a href=""><button>Book a session now</button></a>
-        <a href=""><button>Learn more</button></a>
+        <p>Founded with a passion for healing, we create a compassionate 
+            environment where individuals, families, and communities can find 
+            support, guidance, and growth. From one-on-one therapy sessions 
+            to professional development programs, we are dedicated to 
+            empowering lives
+        </p>
+        <a href="" class="book-btn">Learn more</a>      
     </div>
-    <div class="slider">
-        <img src="{% static 'images/Erastus.png' %}" alt="Image 1" class="slide">
-        <img src="{% static 'images/photo2.png' %}" alt="Image 2" class="slide">
-        <img src="{% static 'images/photo11.png' %}" alt="Image 3" class="slide">
+  </section>
+    <section class="service-section">
+        <div class="content-card">
+            <h2>Our Services</h2>
+            <h6>Blending professional counselling with impactful training in Kenya.</h6>
+            <p>At Techwell Therapy, we provide a wide range of counselling, therapy, and wellness services designed to meet
+            you where you are. Whether you’re seeking individual support, family guidance, or group therapy, our compassionate
+            professionals are here to walk with you on your journey toward healing and growth.
+            </p>
+        </div>
+         <div class="service-container">
+            <div class="services-card">
+                <img src="{% static 'images/individual.jpg' %}" alt="" class="image">
+                <h4>Individual Therapy</h4>
+                <p>Private one-on-one sessions in a safe, supportive space. Build resilience and 
+                    discover healthy coping strategies.
+                </p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/couples.jpg' %}" alt="" class="image">
+                <h4>Couples Therapy</h4>
+                <p>Guided sessions to strengthen relationships. Improve communication and resolve conflicts together.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/coperate.jpg' %}" alt="" class="image">
+                <h4>Corporate Therapy</h4>
+                <p>Workplace programs that boost employee wellbeing. Address stress, burnout, and team challenges.</p>
+            </div>
+            </div>
+        <div class="service-container">
+            <div class="services-card">
+                <img src="{% static 'images/stress.jpg' %}" alt="" class="image">
+                <h4>Stress Therapy</h4>
+                <p>Learn practical techniques to handle daily stress. Regain balance and peace of mind.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/depression.jpg' %}" alt="" class="image">
+                <h4>Depression Therapy</h4>
+                <p>Compassionate support for those facing depression. Find hope and healing through proven methods.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/anxiety.jpg' %}" alt="" class="image">
+                <h4>Anxiety Therapy</h4>
+                <p>Targeted sessions to manage worry and fear. Regain control and live with confidence.</p>
+            </div>
+        </div>
+    </section>
+    <section class="tag-section">
+        <div class="tag-container">
+            <div class="tag-card">
+                <p><strong>1125 +</strong></p>
+                <p>Happy Clients</p>
+            </div>
+            <div class="tag-card">
+                <p><strong>2325 +</strong></p>
+                <p>Sessions</p>
+            </div>
+            <div class="tag-card">
+                <p><strong>5 +</strong></p>
+                <p>Years of Experience</p>
+            </div>
+            <div class="tag-card">
+                <p><strong>6 +</strong></p>
+                <p>Experienced therapist</p>
+            </div>
+        </div>
+    </section>
+    <section class="service-section">
+        <div class="content-card">
+            <h2>How It Works</h2>
+            <h6>Simple, Supportive, and Stress-Free</h6>
+            <p> Booking a session with Techwell Therapy is quick and straightforward. 
+              We’ve designed the process to make sure you feel supported at every step — 
+              from your first click to your first conversation with a therapist.</p>
+        </div>
+         <div class="service-container">
+            <div class="procedure-card">
+                <h4 style="color: #4D7838;"> Choose a Service</h4>
+                <p> Select the type of therapy or counselling that suits your needs.</p>
+            </div>
+            <div class="procedure-card">
+              <h4 style="color: #4D7838;"> Book a Session</h4>
+                <p> Pick a convenient time through our easy online booking system.</p>
+            </div>
+            <div class="procedure-card">
+               <h4 style="color: #4D7838;"> Confirm & Prepare</h4>
+                <p> Receive confirmation and session details via email or SMS..</p>
+            </div>
+            <div class="procedure-card">
+                <h4 style="color: #4D7838;"> Meet Your Therapist</h4>
+                <p> Connect in person or virtually in a safe, confidential space.</p>
+            </div>
+            <div class="procedure-card">
+                <h4 style="color: #4D7838"> Begin Your Journey</h4>
+                <p> Start working toward healing, growth, and lasting wellness.</p>
+            </div>
+            </div>
+            <br>
+            <a href="" class="book-btn"> Discover Programs</a>  
+    </section>
+    <section class="price-section">
+        <div class="content-card">
+            <h2> Pricing Plans</h2>
+            <h6> Flexible plans designed to fit your needs and budget.</h6>
+            <p> At Techwell Therapy, we believe mental wellness should be accessible to all. 
+              Our transparent pricing ensures you get professional, compassionate care without 
+              financial stress. Choose a plan that works best for you and begin your journey to 
+              healing today.
+            </p>
+        </div>
+         <div class="price-container">
+            <div class="price-card">
+              <h4 style="background-color: rgb(104, 14, 14);">Bronze Plan</h4>
+                <h6> Start from</h6>
+                <h5>  KES 1,000 / session</h5>
+                <ul>
+                  <li>One 45-minute individual counselling session</li>
+                  <li> Available in-person or online</li>
+                  <li> Perfect for first-time clients</li>
+                </ul>
+                <a href="{% url 'booking' %}" class="book-btn">Book now</a> 
+            </div>
+            <div class="price-card">
+              <h4 style="background-color: rgb(4, 139, 4);">Silver Plan</h4>
+                <h6> Start from</h6>
+                <h5>  KES 2,500 / session</h5>
+                <ul>
+                  <li>Three 45-minute individual counselling session</li>
+                  <li> Priority Scheduling</li>
+                  <li> Ideal for short-term support</li>
+                </ul>
+                <a href="{% url 'booking' %}" class="book-btn">Book now</a> 
+            </div>
+            <div class="price-card">
+              <h4 style="background-color: rgb(6, 6, 83);">Platinum Plan</h4>
+                <h6> Start from</h6>
+                <h5> KES 4,000 / session</h5>
+                <ul>
+                  <li>Three 45-minute individual counselling session</li>
+                  <li>Personalized therapy </li>
+                  <li>Roadmap Includes follow-up checkin</li>
+                </ul>
+                <a href="{% url 'booking' %}" class="book-btn">Book now</a> 
+            </div>
+         </div>
+             
+    </section>
+
+    <section class="service-section">
+        <h2>Meet Our Team</h2>
+        <h6>Compassionate professionals dedicated to your wellbeing.</h6>
+        <p>At Techwell Therapy, we believe healing begins with people who care. Our team of experienced counsellors and 
+            therapists is committed to guiding you with empathy, professionalism, and proven expertise. Led by our 
+            founders, Erastus and Catherine Ivelia, we work together to create a safe and supportive environment for 
+            individuals, couples, and organizations across Kenya.
+        </p>
+        <div class="service-container">
+            <div class="services-card">
+                <img src="{% static 'images/Erastus.png' %}" alt="" class="image">
+                <h4>Erastus Ivelia</h4>
+                <h5><strong>Founder & Lead Counsellor</h5></strong>
+                <p> Specializes in individual and couples therapy with over 7 years of experience in guiding clients toward healing and personal growth</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/Catherine.png' %}" alt="" class="image">
+                <h4>Catherine Ivelia</h4>
+                <h5><strong>Co-Founder & Director</h5></strong>
+                <p>Passionate about empowering communities, Catherine oversees wellness programs and brings a holistic approach to mental health support.</p>
+            </div>
+            <div class="services-card">
+                <img src="{% static 'images/Grace.jpg' %}" alt="" class="image">
+                <h4>Grace Awiti</h4>
+                <h5><strong>Senior Counsellor</h5></strong>
+                <p> Expert in stress management and workplace wellness, dedicated to helping clients build resilience.</p>
+            </div>
+        </div>
+    </section>
+<section class="testimonials-section">
+  <h2>Testimonials</h2>
+  <h6>Stories of healing, growth, and transformation</h6>
+
+  <div class="testimonials-card">
+    <img src="{% static 'images/client.jpg' %}" alt="person">
+    <div><p>“Techwell Therapy has been a safe space for me. My sessions with Erastus have helped me manage anxiety and rebuild my confidence.”</p>
+    <p><strong>Jane M.</strong> – Individual Therapy</p>
     </div>
+  </div>
+
+  <div class="testimonials-card">
+    <img src="{% static 'images/client1.jpg' %}" alt="person">
+    <div><p>“I appreciate the therapist’s ability to combine compassion with practical strategies. Their approach fosters real progress and long-term personal growth.”</p>
+    <p><strong>Sarah T.</strong> – Couple's Therapy</p>
+    </div>
+  </div>
+
+  <div class="testimonials-card">
+    <img src="{% static 'images/client2.jpg' %}" alt="person">
+    <div><p>“Sessions are conducted with professionalism and care, creating a space where clients feel heard and respected. The guidance offered is both constructive and empowering.”</p>
+    <p><strong>Alex K.</strong> – Individual Therapy</p>
+    </div>
+  </div>
+
+  <div class="testimonials-card">
+    <img src="{% static 'images/client4.jpg' %}" alt="person">
+    <div><p>“The therapist demonstrates expertise and empathy in every session. Their support has a meaningful impact on personal well-being and resilience.”</p>
+    <p><strong>Brian L.</strong> – Individual Therapy</p>
+  </div>
+  </div>
+
+  <div class="testimonials-card">
+    <img src="{% static 'images/client3.jpg' %}" alt="person">
+    <p>“The therapist provides a supportive and professional environment that makes it easy to open up. Each session is focused, insightful, and tailored to individual needs.”</p>
+    <p><strong>Johnathan P.</strong> – Stress Therapy</p>
+  </div>
+
+  <div class="testimonials-card">
+    <img src="{% static 'images/client5.jpg' %}" alt="person">
+   <div><p>“The therapist combines expertise with genuine care, helping clients navigate challenges with confidence and clarity.”</p>
+    <p><strong>Melissa R.</strong> – Anxiety Therapy</p>
+    </div>
+  </div>
 </section>
-<div class="container-one">
-    <div class="profile1-wrapper">
-        <img src="{% static 'images/Erastus.png' %}" alt="Photo" class="profile1-photo">
-    </div>
-     
-    <div class="card-1" >
-        <h3>Your Partner in Growth and Healing</h3>
-        <p>Hey there! I’m Erastus Ivelia Matekwa, and I’m so glad you’re here. Life can be overwhelming at
-            times, and you don’t have to go through it alone.</p>
-        <p>Whether you’re dealing with stress, anxiety, 
-            relationship struggles, or just feeling stuck, I’m here to help you navigate it all with compassion 
-            and understanding.</p>
-    </div>
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+<div class="faq-container">
+  <details>
+    <summary>What is counselling?</summary>
+    <p>
+      Counselling is a confidential, supportive process where a trained therapist
+      helps you explore your thoughts, feelings, and behaviors to better
+      understand yourself and work through challenges.
+    </p>
+  </details>
+
+  <details>
+    <summary>Who is counselling for?</summary>
+    <p>
+      Counselling is for anyone seeking support — whether you’re facing stress,
+      anxiety, relationship issues, trauma, or simply want personal growth and
+      clarity.
+    </p>
+  </details>
+
+  <details>
+    <summary>How do I know if I need counselling?</summary>
+    <p>
+      If you’re feeling overwhelmed, stuck, or emotionally drained — or just want
+      a safe space to talk — counselling can help. It’s okay to seek support even
+      if you’re unsure what’s “wrong.”
+    </p>
+  </details>
+
+  <details>
+    <summary>What issues can you help with?</summary>
+    <p>
+      We support clients dealing with anxiety, depression, self-esteem issues,
+      trauma, grief, relationship and family problems, life transitions, and
+      more.
+    </p>
+  </details>
+
+  <details>
+    <summary>Is counselling confidential?</summary>
+    <p>
+      Yes. Everything you share is kept confidential unless there’s a risk of
+      harm to you or others.
+    </p>
+  </details>
+
+  <details>
+    <summary>Do you offer online sessions?</summary>
+    <p>
+      Yes, we offer both in-person and secure online counselling sessions for
+      your convenience.
+    </p>
+  </details>
+
+  <details>
+    <summary>How do I book a session?</summary>
+    <p>
+      You can book via our website, phone, or contact form. We'll guide you
+      through the next steps.
+    </p>
+  </details>
+
+  <details>
+    <summary>What are your fees and payment options?</summary>
+    <p>
+      Session fees and payment options vary. We accept M-Pesa, PayPal, and bank
+      transfer. Sliding scale fees available on request.
+    </p>
+  </details>
+  </div>
+
+</section>
+<section class="contact-section">
+  <h2>Get in Touch</h2>
+    <h6>We re here to listen and support you.</h6>
+    <p>Whether you re ready to book a session, have a question about our courses, or simply want to learn more, the Techwell Therapy team is here for you. </p>
+    <p>Reach out today, your journey to healing starts with a conversation</p>
+    <form method="POST" class="contact-form">
+    {% csrf_token %}
    
-</div>
-<hr>
-<div class="container-one">
-        <div class="card-one" >
-             <h3>How I Can Help:</h3>
-            <p>Everyone’s journey is different, and I’m here to support you with personalized counseling that fits your
-                 needs. </p>
-            <p>Whether you're looking for a space to talk, tools to manage anxiety, or guidance through life’s 
-                challenges, I’m here to help.</p>
-         <a href="{% url 'services' %}"><button>Book a session now</button></a>      
-        </div> 
-        <div class="card-one">
-            <h3>My Services</h3>
-            <p>Individual Therapy</p>
-            <p>Anxiety & Stress Management</p>
-            <p>Self-Esteem & Personal Growth</p>
-            <p>Relationship & Couples Counseling</p>
-             <p>Grief & Life Transitions Support</p>
-        </div>      
+    <div class="form-group">
+        {{ form.name }}
+        {% if form.name.errors %}
+            <small class="error-text">{{ form.name.errors.0 }}</small>
+        {% endif %}
     </div>
-</div>
+
+    <div class="form-group">
+        {{ form.email }}
+        {% if form.email.errors %}
+            <small class="error-text">{{ form.email.errors.0 }}</small>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        {{ form.subject }}
+        {% if form.subject.errors %}
+            <small class="error-text">{{ form.subject.errors.0 }}</small>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        {{ form.message }}
+        {% if form.message.errors %}
+            <small class="error-text">{{ form.message.errors.0 }}</small>
+        {% endif %}
+    </div>
+
+    <button type="submit" class="book-btn">Send Message</button>
+</form>
+</section>
+
+
  
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 {% endblock %}
